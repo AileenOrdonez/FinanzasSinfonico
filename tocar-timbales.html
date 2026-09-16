@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Timbal - Finanzas Sinfónico</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="tocar">
+
+        <!-- TÍTULO E INSTRUCCIONES -->
+
+        <header class="tocar-header">
+
+
+            <h1>El Timbal</h1>
+
+            <p>
+                Usa el teclado para tocar - Sigue a tu director - Escucha a tus compañeros
+            </p>
+
+        </header>
+        
+
+
+        <!-- PARTITURA -->
+
+        <section class="partitura-container">
+
+            <img
+                src="images/PartituraTimbal.png"
+                alt="Partitura de timbales"
+                class="partitura-img"
+            >
+
+        </section>
+
+        <br>
+
+
+        <!-- ÁREA DEL INSTRUMENTO -->
+
+        <section class="instrumento-area">
+
+            <!-- TECLAS -->
+
+            <div class="teclas-tocar">
+
+                <div class="tecla" data-key="A" data-audio="./audio/TimbalA.mp3">
+                    A
+                </div>
+
+                <div class="tecla" data-key="B" data-audio="./audio/TimbalB.mp3">
+                    B
+                </div>
+
+                <div class="tecla" data-key="L" data-audio="./audio/TimbalL.mp3">
+                    L
+                </div>
+
+            </div>
+
+
+            <!-- ILUSTRACIÓN -->
+
+            <img
+                src="images/FondoTimbal.png"
+                alt="Timbales"
+                class="fondo-instrumento fondo-timbales"
+            >
+
+        </section>
+
+    </main>
+
+
+    <script src="tocar.js"></script>
+
+</body>
+
+</html>

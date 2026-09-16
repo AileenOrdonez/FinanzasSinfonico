@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Los Vientos de Madera - Finanzas Sinfónico</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="tocar">
+
+        <!-- TÍTULO E INSTRUCCIONES -->
+
+        <header class="tocar-header">
+
+
+            <h1>Los Vientos de Madera</h1>
+
+            <p>
+                Usa el teclado para tocar - Sigue a tu director - Escucha a tus compañeros
+            </p>
+
+        </header>
+        
+
+
+        <!-- PARTITURA -->
+
+        <section class="partitura-container">
+
+            <img
+                src="images/PartituraVientos.png"
+                alt="Partitura de los vientos"
+                class="partitura-img"
+            >
+
+        </section>
+
+        <br>
+
+
+        <!-- ÁREA DEL INSTRUMENTO -->
+
+        <section class="instrumento-area">
+
+            <!-- TECLAS -->
+
+            <div class="teclas-tocar">
+
+                <div class="tecla" data-key="I" data-audio="./audio/VientosI.mp3">
+                    I
+                </div>
+
+                <div class="tecla" data-key="O" data-audio="./audio/VientosO.mp3">
+                    O
+                </div>
+
+                <div class="tecla" data-key="P" data-audio="./audio/VientosP.mp3">
+                    P
+                </div>
+
+            </div>
+
+
+            <!-- ILUSTRACIÓN -->
+
+            <img
+                src="images/FondoVientos.png"
+                alt="Vientos"
+                class="fondo-instrumento fondo-vientos"
+            >
+
+        </section>
+
+    </main>
+
+
+    <script src="tocar.js"></script>
+
+</body>
+
+</html>

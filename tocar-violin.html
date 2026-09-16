@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Violín - Finanzas Sinfónico</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="tocar">
+
+        <!-- TÍTULO E INSTRUCCIONES -->
+
+        <header class="tocar-header">
+
+
+            <h1>El Violin</h1>
+
+            <p>
+                Usa el teclado para tocar - Sigue a tu director - Escucha a tus compañeros
+            </p>
+
+        </header>
+        
+
+
+        <!-- PARTITURA -->
+
+        <section class="partitura-container">
+
+            <img
+                src="images/PartituraViolin.png"
+                alt="Partitura del violín"
+                class="partitura-img"
+            >
+
+        </section>
+
+        <br>
+
+
+        <!-- ÁREA DEL INSTRUMENTO -->
+
+        <section class="instrumento-area">
+
+            <!-- TECLAS -->
+
+            <div class="teclas-tocar">
+
+                <div class="tecla" data-key="C" data-audio="./audio/ViolinC.mp3">
+                    C
+                </div>
+
+                <div class="tecla" data-key="B" data-audio="./audio/ViolinB.mp3">
+                    B
+                </div>
+
+            </div>
+
+
+            <!-- ILUSTRACIÓN -->
+
+            <img
+                src="images/FondoViolin.png"
+                alt="Violin"
+                class="fondo-instrumento fondo-violin"
+            >
+
+        </section>
+
+    </main>
+
+
+    <script src="tocar.js"></script>
+
+</body>
+
+</html>

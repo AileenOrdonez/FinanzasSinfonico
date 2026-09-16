@@ -1,0 +1,777 @@
+/* ========================================
+   FUENTES
+   ======================================== */
+
+@font-face {
+    font-family: "Grown";
+    src: url("fonts/Grown.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ShadedLarch";
+    src: url("fonts/ShadedLarch_PERSONAL_USE.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ========================================
+   VARIABLES
+   ======================================== */
+
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --magenta: #c23ba5;
+}
+
+
+/* ========================================
+   GENERAL
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--negro);
+    color: var(--blanco);
+
+    font-family: "Grown", Georgia, serif;
+}
+
+
+/* ========================================
+   HOME
+   ======================================== */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: clamp(25px, 4vh, 55px);
+    overflow: hidden;
+}
+
+
+/* ========================================
+   LOGO
+   ======================================== */
+
+.logo {
+    width: clamp(90px, 7.5vw, 135px);
+    height: auto;
+
+    margin-bottom: clamp(25px, 3vh, 40px);
+}
+
+
+/* ========================================
+   BIENVENIDA
+   ======================================== */
+
+.bienvenida h1 {
+    margin: 0;
+
+    font-family: "Grown", Georgia, serif;
+    font-weight: normal;
+
+    font-size: clamp(42px, 4.4vw, 68px);
+    line-height: 0.95;
+}
+
+.bienvenida p {
+    margin: 8px 0 0;
+
+    font-family: "Grown", Georgia, serif;
+    font-weight: normal;
+
+    font-size: clamp(23px, 2.3vw, 36px);
+    line-height: 1;
+}
+
+
+/* ========================================
+   FINANZAS SINFÓNICO
+   ======================================== */
+
+.titulo-evento {
+    margin-top: clamp(40px, 5vh, 65px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finanzas {
+    font-family: "Grown", Georgia, serif;
+
+    font-size: clamp(85px, 10vw, 150px);
+    line-height: 0.65;
+
+    white-space: nowrap;
+}
+
+.sinfonico {
+    font-family: "ShadedLarch", cursive;
+
+    font-size: clamp(75px, 8.5vw, 130px);
+    line-height: 0.8;
+
+    margin-top: clamp(8px, 1vh, 15px);
+}
+
+
+/* ========================================
+   BOTÓN
+   ======================================== */
+
+.boton-comenzar {
+    width: clamp(320px, 35vw, 470px);
+
+    margin-top: clamp(50px, 7vh, 80px);
+
+    padding: clamp(15px, 1.8vh, 20px) 30px;
+
+    border: 2px solid var(--magenta);
+    border-radius: 22px;
+
+    background-color: transparent;
+    color: var(--blanco);
+
+    font-family: "Grown", Georgia, serif;
+    font-size: clamp(22px, 2vw, 30px);
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.1s ease;
+}
+
+.boton-comenzar:hover {
+    background-color: var(--magenta);
+}
+
+.boton-comenzar:active {
+    transform: scale(0.98);
+}
+
+
+/* ========================================
+   LAPTOPS CON MENOR ALTURA
+   ======================================== */
+
+@media (max-height: 800px) {
+
+    .home {
+        padding: 25px;
+    }
+
+    .logo {
+        width: 65px;
+        margin-bottom: 20px;
+    }
+
+    .bienvenida h1 {
+        font-size: clamp(38px, 4vw, 58px);
+    }
+
+    .bienvenida p {
+        font-size: clamp(21px, 2vw, 30px);
+    }
+
+    .titulo-evento {
+        margin-top: 35px;
+    }
+
+    .finanzas {
+        font-size: clamp(75px, 9vw, 120px);
+    }
+
+    .sinfonico {
+        font-size: clamp(68px, 8vw, 105px);
+    }
+
+    .boton-comenzar {
+        margin-top: 42px;
+        padding: 14px 30px;
+    }
+}
+
+
+/* ========================================
+   LAPTOPS MÁS ESTRECHAS
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .finanzas {
+        font-size: clamp(70px, 13vw, 110px);
+    }
+
+    .sinfonico {
+        font-size: clamp(65px, 11vw, 100px);
+    }
+
+    .boton-comenzar {
+        width: min(430px, 75vw);
+    }
+}
+
+/* ========================================
+   PANTALLA APORTE
+   ======================================== */
+
+.aporte {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: clamp(25px, 4vh, 55px);
+}
+
+
+/* Logo */
+
+.aporte-logo {
+    margin-bottom: clamp(40px, 5vh, 65px);
+}
+
+
+/* ========================================
+   TEXTO
+   ======================================== */
+
+.aporte-texto h1 {
+    margin: 0;
+
+    font-family: "Grown", Georgia, serif;
+    font-weight: normal;
+
+    font-size: clamp(42px, 4.2vw, 68px);
+    line-height: 1;
+}
+
+
+.aporte-texto p {
+    margin:
+        clamp(18px, 2vh, 28px) 0 0;
+
+    font-family: "Grown", Georgia, serif;
+    font-weight: normal;
+
+    font-size: clamp(22px, 2vw, 32px);
+}
+
+
+/* ========================================
+   FORMULARIO
+   ======================================== */
+
+.aporte-form {
+    width: min(500px, 80vw);
+
+    margin-top: clamp(45px, 6vh, 70px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+/* ========================================
+   CAMPO DE TEXTO
+   ======================================== */
+
+.aporte-input {
+    width: 100%;
+
+    padding: 18px 30px;
+
+    border: 2px solid var(--blanco);
+    border-radius: 22px;
+
+    background-color: transparent;
+    color: var(--blanco);
+
+    font-family: "Grown", Georgia, serif;
+    font-size: clamp(21px, 1.8vw, 28px);
+
+    text-align: center;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.aporte-input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
+/* Cuando están escribiendo */
+
+.aporte-input:focus {
+    border-color: var(--magenta);
+
+    box-shadow:
+        0 0 20px rgba(194, 59, 165, 0.2);
+}
+
+/* ========================================
+   LAPTOPS CON MENOR ALTURA
+   ======================================== */
+
+@media (max-height: 800px) {
+
+    .aporte-logo {
+        width: 65px;
+        margin-bottom: 30px;
+    }
+
+    .aporte-texto h1 {
+        font-size: clamp(36px, 3.7vw, 52px);
+    }
+
+    .aporte-texto p {
+        font-size: clamp(20px, 1.8vw, 27px);
+    }
+
+    .aporte-form {
+        margin-top: 35px;
+    }
+
+}
+
+.aporte-input.correcto {
+    border-color: var(--magenta);
+    box-shadow:
+        0 0 20px rgba(194, 59, 165, 1),
+        0 0 45px rgba(194, 59, 165, 0.9),
+        0 0 80px rgba(194, 59, 165, 0.7);
+}
+
+/* ========================================
+   REVEAL DE INSTRUMENTO
+   ======================================== */
+
+.reveal {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: clamp(25px, 4vh, 55px);
+    overflow: hidden;
+}
+
+
+/* ---------- TÍTULO ---------- */
+
+.reveal-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reveal-intro {
+    margin: 0;
+
+    font-family: "Grown", Georgia, serif;
+    font-size: clamp(30px, 3vw, 48px);
+    line-height: 1;
+
+    color: var(--magenta);
+}
+
+.reveal-titulo h1 {
+    margin: 5px 0 0;
+
+    font-family: "Grown", Georgia, serif;
+    font-weight: normal;
+
+    font-size: clamp(75px, 8vw, 125px);
+    line-height: 0.95;
+
+    color: var(--blanco);
+}
+
+
+/* ---------- INSTRUMENTO ---------- */
+
+.reveal-instrumento {
+    width: clamp(350px, 38vw, 600px);
+    height: auto;
+
+    object-fit: contain;
+
+    margin-top: clamp(30px, 4vh, 50px);
+    margin-bottom: clamp(25px, 3vh, 40px);
+}
+
+
+/* ---------- MENSAJE INFERIOR ---------- */
+
+.reveal-mensaje {
+    width: min(665px, 75vw);
+
+    margin: 0;
+    padding: 18px 25px;
+
+    border: 2px solid var(--magenta);
+    border-radius: 22px;
+
+    background-color: transparent;
+    color: var(--blanco);
+
+    font-family: "Grown", Georgia, serif;
+    font-size: clamp(20px, 1.8vw, 28px);
+    line-height: 1.1;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.1s ease;
+}
+
+.reveal-mensaje:hover {
+    background-color: var(--magenta);
+}
+
+.reveal-mensaje:active {
+    transform: scale(0.98);
+}
+
+
+/* ========================================
+   LAPTOPS CON MENOR ALTURA
+   Ej: 1366 x 768
+   ======================================== */
+
+@media (max-height: 800px) {
+
+    .reveal {
+        padding: 20px;
+    }
+
+    .reveal-intro {
+        font-size: clamp(27px, 2.6vw, 38px);
+    }
+
+    .reveal-titulo h1 {
+        font-size: clamp(65px, 7vw, 95px);
+    }
+
+    .reveal-instrumento {
+        width: clamp(300px, 32vw, 450px);
+
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+
+    .reveal-mensaje {
+        padding: 14px 22px;
+
+        font-size: clamp(18px, 1.6vw, 24px);
+    }
+}
+
+
+/* ========================================
+   PANTALLAS MÁS ANGOSTAS
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .reveal-titulo h1 {
+        font-size: clamp(65px, 11vw, 100px);
+    }
+
+    .reveal-instrumento {
+        width: min(500px, 70vw);
+    }
+
+    .reveal-mensaje {
+        width: min(650px, 80vw);
+    }
+}
+
+.reveal {
+    animation: fadeDesdeNegro 1.2s ease-out both;
+}
+
+@keyframes fadeDesdeNegro {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========================================
+   PANTALLA PARA TOCAR
+   ======================================== */
+
+.tocar {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--negro);
+    color: var(--blanco);
+
+    overflow: hidden;
+}
+
+
+/* ---------- TÍTULO ---------- */
+
+.tocar-header {
+    text-align: center;
+
+    padding-top: clamp(50px, 8vh, 90px);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    flex-shrink: 0;
+}
+
+.tocar-header h1 {
+    margin: 0;
+
+    font-family: "Grown", Georgia, serif;
+    font-weight: normal;
+
+    font-size: clamp(45px, 4vw, 70px);
+    line-height: 1;
+}
+
+.tocar-header p {
+    margin: 8px 0 0;
+
+    font-family: "Grown", Georgia, serif;
+
+    font-size: clamp(16px, 1.5vw, 24px);
+    line-height: 1.1;
+}
+
+
+/* ========================================
+   PARTITURA
+   ======================================== */
+
+.partitura-container {
+    width: 100%;
+
+    margin-top: clamp(20px, 3vh, 35px);
+
+    flex-shrink: 0;
+}
+
+.partitura-img {
+    display: block;
+
+    width: 115%;
+    height: auto;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    object-fit: contain;
+}
+
+
+/* ========================================
+   INSTRUMENTO + TECLAS
+   ======================================== */
+
+.instrumento-area {
+    position: relative;
+
+    width: 100%;
+    flex: 1;
+
+    min-height: 0;
+
+    overflow: hidden;
+}
+
+
+/* ---------- TECLAS ---------- */
+
+.teclas-tocar {
+    position: absolute;
+
+    top: clamp(25px, 5vh, 60px);
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0 10vw;
+
+    z-index: 2;
+}
+
+.tecla {
+    width: clamp(70px, 7vw, 110px);
+    aspect-ratio: 1 / 0.85;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--blanco);
+    border-radius: 20px;
+
+    background-color: #6f2865;
+    color: var(--blanco);
+
+    font-family: "Grown", Georgia, serif;
+    font-size: clamp(42px, 4vw, 68px);
+
+    user-select: none;
+
+    transition:
+        transform 0.08s ease,
+        box-shadow 0.08s ease,
+        background-color 0.08s ease;
+}
+
+
+/* Cuando la persona presiona la tecla */
+
+.tecla.activa {
+    transform: scale(0.92);
+
+    background-color: var(--magenta);
+
+    box-shadow:
+        0 0 20px rgba(194, 59, 165, 1),
+        0 0 45px rgba(194, 59, 165, 0.8);
+}
+
+
+/* ---------- ILUSTRACIÓN ---------- */
+
+.fondo-instrumento {
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 100vw;
+    height: auto;
+
+    object-fit: contain;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+
+/* ========================================
+   LAPTOPS DE MENOR ALTURA
+   ======================================== */
+
+@media (max-height: 800px) {
+
+    .tocar-header {
+        padding-top: 25px;
+    }
+
+    .tocar-header h1 {
+        font-size: clamp(40px, 3.5vw, 58px);
+    }
+
+    .tocar-header p {
+        margin-top: 5px;
+
+        font-size: clamp(15px, 1.3vw, 20px);
+    }
+
+    .partitura-container {
+        margin-top: 15px;
+    }
+
+    .teclas-tocar {
+        top: 25px;
+    }
+
+    .tecla {
+        width: clamp(65px, 6vw, 90px);
+
+        font-size: clamp(38px, 3.5vw, 55px);
+    }
+
+    .fondo-timbales {
+        width: min(900px, 92vw);
+    }
+}
+
+.imagen-inline {
+    height: 2.5em;
+    width: auto;
+    vertical-align: middle;
+}

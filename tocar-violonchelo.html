@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Violonchelo - Finanzas Sinfónico</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="tocar">
+
+        <!-- TÍTULO E INSTRUCCIONES -->
+
+        <header class="tocar-header">
+
+
+            <h1>El Violonchelo</h1>
+
+            <p>
+                Usa el teclado para tocar - Sigue a tu director - Escucha a tus compañeros
+            </p>
+
+        </header>
+        
+
+
+        <!-- PARTITURA -->
+
+        <section class="partitura-container">
+
+            <img
+                src="images/PartituraViolonchelo.png"
+                alt="Partitura del violonchelo"
+                class="partitura-img"
+            >
+
+        </section>
+
+        <br>
+
+
+        <!-- ÁREA DEL INSTRUMENTO -->
+
+        <section class="instrumento-area">
+
+            <!-- TECLAS -->
+
+            <div class="teclas-tocar">
+
+                <div class="tecla" data-key="F" data-audio="./audio/VioloncheloF.mp3">
+                    F
+                </div>
+
+                <div class="tecla" data-key="J" data-audio="./audio/VioloncheloJ.mp3">
+                    J
+                </div>
+
+            </div>
+
+
+            <!-- ILUSTRACIÓN -->
+
+            <img
+                src="images/FondoViolonchelo.png"
+                alt="Violonchelo"
+                class="fondo-instrumento fondo-violonchelo"
+            >
+
+        </section>
+
+    </main>
+
+
+    <script src="tocar.js"></script>
+
+</body>
+
+</html>
