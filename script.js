@@ -2,11 +2,11 @@ const aporteInput = document.getElementById("aporteInput");
 
 
 const instrumentos = {
-    "PRECISION": "timbales.html",
-    "EMPATIA": "fagot.html",
+    "INTEGRIDAD": "timbales.html",
+    "VALENTIA": "fagot.html",
     "ENFOQUE": "trombon.html",
     "EXCELENCIA": "vientos.html",
-    "DISCIPLINA": "violin.html",
+    "INNOVACION": "violin.html",
     "PASION": "violonchelo.html",
     "AGILIDAD": "trompeta.html",
 };
