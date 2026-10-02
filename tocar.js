@@ -42,26 +42,3 @@ document.addEventListener("keyup", function (event) {
     const teclaVisual = document.querySelector(
         `[data-key="${teclaPresionada}"]`
     );
-
-document.addEventListener("keydown", (event) => {
-
-    if (event.code === "Space") {
-
-        document.querySelectorAll(".tecla").forEach(tecla => {
-
-            const audio = new Audio(tecla.dataset.audio);
-
-            audio.volume = 0.00001;
-            audio.play();
-
-        });
-
-    }
-
-});
-
-    if (teclaVisual) {
-        teclaVisual.classList.remove("activa");
-    }
-
-});
