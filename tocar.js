@@ -42,3 +42,9 @@ document.addEventListener("keyup", function (event) {
     const teclaVisual = document.querySelector(
         `[data-key="${teclaPresionada}"]`
     );
+
+    if (teclaVisual) {
+        teclaVisual.classList.remove("activa");
+    }
+
+});
